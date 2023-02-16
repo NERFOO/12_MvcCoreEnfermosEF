@@ -1,0 +1,12 @@
+﻿@model Enfermo
+
+<h1>Details Enfermo</h1>
+
+<div class="card" style="width: 40%;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Apellido</h5>
+        <p class="card-text">Datos de contacto: @Model.Direccion -- @Model.NSS -- @Model.Sexo</p>
+        <a asp-controller="Enfermo" asp-action="Index" class="btn btn-danger">Come back</a>
+    </div>
+</div>
+
